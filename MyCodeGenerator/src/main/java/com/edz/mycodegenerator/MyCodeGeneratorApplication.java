@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import tk.mybatis.spring.annotation.MapperScan;
 
 @SpringBootApplication
-@MapperScan("com.edenz.mycodegenerator.**.mapper")
+//@MapperScan("com.edz.mycodegenerator.**.mapper")
 public class MyCodeGeneratorApplication {
 
     public static void main(String[] args) {

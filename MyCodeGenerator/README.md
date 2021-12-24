@@ -47,11 +47,9 @@
 
 个人使用：
 ## 1.使用当前项目
-删除baomidou的依赖和CodeGenerator.java。
+pom.xml删除代码生成的依赖和CodeGenerator.java。
 
 ## 2.新建Spring Boot项目
-
-在SpringBoot的启动类上，使用@MapperScan注解时引入了tk.mybatis的包下的，才能使用通用Mapper自带的方法。
 
 application.yaml
 ```yaml
