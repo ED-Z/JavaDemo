@@ -6,7 +6,7 @@
 
 2、拷贝生成的代码和resources的mapper到Spring Boot项目
 
-3、Done
+3、修改application的信息，Done
 
 
 注意:
@@ -47,7 +47,7 @@
 
 个人使用：
 ## 1.使用当前项目
-pom.xml删除代码生成的依赖和CodeGenerator.java。
+pom.xml删除代码生成的依赖和CodeGenerator.java，修改application.yml。
 
 ## 2.新建Spring Boot项目
 

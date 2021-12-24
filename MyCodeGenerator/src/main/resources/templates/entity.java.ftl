@@ -1,6 +1,11 @@
 package ${package.Entity};
 
-import com.edz.commons.pojo.ZBaseObject;
+<#list table.importPackages as pkg>
+    <#if pkg!?contains("baomidou")>
+    <#else>
+import ${pkg};
+    </#if>
+</#list>
 import javax.persistence.Column;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -33,7 +38,7 @@ import lombok.experimental.Accessors;
     </#if>
 </#if>
 <#if table.convert>
- @Table(name="${schemaName}${table.name}")
+@Table(name="${schemaName}${table.name}")
 </#if>
 <#if swagger>
 @ApiModel(value = "${entity}对象", description = "${table.comment!}")
