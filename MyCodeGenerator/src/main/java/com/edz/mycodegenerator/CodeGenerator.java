@@ -1,4 +1,4 @@
-package com.edz.example;
+package com.edz.mycodegenerator;
 import com.baomidou.mybatisplus.generator.FastAutoGenerator;
 import com.baomidou.mybatisplus.generator.config.OutputFile;
 import com.baomidou.mybatisplus.generator.engine.FreemarkerTemplateEngine;
@@ -29,8 +29,8 @@ public class CodeGenerator {
 
                 })
                 .packageConfig(builder -> {
-                    builder.parent("com.example.mp")
-                            .moduleName("system")
+                    builder.parent("com.edz")
+                            .moduleName("mycodegenerator")
                             .entity("entity")
                             .service("service")
                             .serviceImpl("service.impl")
